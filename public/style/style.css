@@ -15,7 +15,7 @@
 }
 
 /* display buttons */
-.display { height: 100px; background-color: aquamarine; }
+.display { height: 100px; background-color: #FFC299; }
 .display-box { padding-left: 280px; padding-top: 30px; }
 
 
@@ -36,14 +36,10 @@
     padding: 13px;
     float: left;
     cursor: pointer;
-    /*margin for button numbers
-    margin-right: 1%;
-    margin-bottom: 1%;
-    */
     border: 1px solid white;
     text-align: center;
     color: #fff;
-    background-color: red;
+    background-color: #580000;
     
 }
 
@@ -59,14 +55,10 @@
     padding: 13px;
     float: left;
     cursor: pointer;
-    /*margin for button numbers
-    margin-right: 1%;
-    margin-bottom: 1%;
-    */
     border: 1px solid white;
     text-align: center;
     color: #fff;
-    background-color: red;
+    background-color: #580000;
     
 }
 

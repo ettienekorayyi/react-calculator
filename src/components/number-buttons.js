@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-//import MathOperationsButtons from './math-operations-buttons';
 
 export default class NumberButtons extends React.Component {
     constructor(props) {
@@ -18,26 +17,29 @@ export default class NumberButtons extends React.Component {
 
     addValues = (x, y) => {
         if (x && y) {
-            this.setState({ result: Number(x) + Number(y) });
+            this.setState({ firstValue: Number(x) + Number(y) });
+            this.setState({ secondValue: '' });
         }
     }
 
     subtractValues = (x, y) => {
         if (x && y) {
-            this.setState({ result: Number(x) - Number(y) });
+            this.setState({ firstValue: Number(x) - Number(y) });
+            this.setState({ secondValue: '' });
         }
     }
 
     divideValues = (x, y) => {
         if (x && y) {
-            this.setState({ result: Number(x) / Number(y) });
-            alert('divide:'+ this.state.result);
+            this.setState({ firstValue: Number(x) / Number(y) });
+            this.setState({ secondValue: '' });
         }
     }
 
     multiplyValues = (x, y) => {
         if (x && y) {
-            this.setState({ result: Number(x) * Number(y) });
+            this.setState({ firstValue: Number(x) * Number(y) });
+            this.setState({ secondValue: '' });
         }
     }
 
@@ -68,7 +70,7 @@ export default class NumberButtons extends React.Component {
         } else if (this.state.operator == '/') {
             this.divideValues(this.state.firstValue, this.state.secondValue);
         } else {
-            //console.log("Executor error.");
+            console.log("Executor error.");
         }
     }
 
@@ -76,7 +78,8 @@ export default class NumberButtons extends React.Component {
         return <div className="wrapper">
             <div className="display">
                 <div className="display-box">
-                    <h1>{this.state.result}</h1>
+                    <div><span>{this.state.secondValue}</span></div>
+                    <div><h1>{this.state.firstValue}</h1></div>
                 </div>
             </div>
             <div className="calculatorGrid">
@@ -145,12 +148,6 @@ export default class NumberButtons extends React.Component {
                     </div>
 
                 </div>
-
-
-                <p>Value of firstValue: {this.state.firstValue} </p>
-                <p>Value of secondValue: {this.state.secondValue} </p>
-                <p>Value of operator: {this.state.operator} </p>
-                <p>Display All: {this.state.result} </p>
             </div>
         </div>;
     }
