@@ -14,18 +14,11 @@
     width: 100%;
 }
 
-/*display buttons*/
-.display {
-    height: 100px;
-    background-color: black;
-    
-}
+/* display buttons */
+.display { height: 100px; background-color: aquamarine; }
+.display-box { padding-left: 280px; padding-top: 30px; }
 
-.textbox {
-    height: 30px;
-    width: 40px;
-    background-color: aquamarine;
-}
+
 
 /*numbers buttons*/
 .grid1 {
@@ -42,7 +35,7 @@
     height: 50px;
     padding: 13px;
     float: left;
-    
+    cursor: pointer;
     /*margin for button numbers
     margin-right: 1%;
     margin-bottom: 1%;
@@ -65,7 +58,7 @@
     height: 50px;
     padding: 13px;
     float: left;
-    
+    cursor: pointer;
     /*margin for button numbers
     margin-right: 1%;
     margin-bottom: 1%;
