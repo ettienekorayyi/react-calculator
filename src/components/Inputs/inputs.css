@@ -1,6 +1,5 @@
 body {
     background-image: url('https://images.unsplash.com/photo-1546484396-fb3fc6f95f98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
-    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -13,7 +12,6 @@ body {
     margin: auto;
     height: 500px;
     box-shadow: 5px 10px 8px 10px #2a2928;
-    
 }
 
 .inputs-container {
@@ -40,54 +38,4 @@ section#main-input {
 section#main-input,
 section#sub-input {
     color: #ff0000;
-}
-
-.numbers {
-    width: 375px;
-    height: 380px;
-}
-
-.btn-number,
-.btn-operator {
-    width: 94px;
-    height: 76px;
-}
-
-div.numbers  {
-    display: grid;
-    grid-template-columns: 94px 94px 94px 97px;
-    grid-template-rows: 76px 76px 76px 76px 76px;
-    box-sizing: border-box;
-    background-color: pink;
-}
-
-#btn-equal {
-    width: 188px !important;
-    background-color: #ff0000;
-    font-size: 25px;
-    color: white;
-    border:none;
-}
-
-.btn-number,
-.btn-operator {
-    background-color: #ff0000 !important;
-}
-
-button[class|='btn'] {
-    color: white !important;
-    font-size: 25px;
-    border:none;
-}
-
-
-
-button:hover {
-    background-color: #E8004F !important;
-    color: white !important;
-}
-
-#btn-equal:hover {
-    background-color: #8b0000 !important;
-    color: white !important;
 }
