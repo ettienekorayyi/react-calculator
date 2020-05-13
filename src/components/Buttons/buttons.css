@@ -1,0 +1,59 @@
+
+.numbers {
+    width: 375px;
+    height: 380px;
+}
+
+.btn-number,
+.btn-operator {
+    width: 93.7px;
+}
+
+div.numbers  {
+    display: grid;
+    grid-template-columns: 93.7px 93.7px 93.7px 93.7px;
+    grid-template-rows: 75px 75px 75px 75px 75px;
+    box-sizing: border-box;
+    background-color: white;
+    height: 402px !important;
+    border-radius: 25px;
+    box-shadow: 5px 10px 8px 5px #2a2928;
+}
+
+#btn-equal {
+    width: 188px !important;
+    background-color: #ff0000;
+    font-size: 25px;
+    color: white;
+    border:none;
+}
+
+span {
+    position: absolute;
+    bottom: 125px;
+    left: 230px;
+   
+}
+
+.btn-number,
+.btn-operator {
+    background-color: #ff0000 !important;
+}
+
+button[class|='btn'] {
+    color: white !important;
+    font-size: 25px;
+    border:none;
+}
+
+
+
+button:hover {
+    background-color: #E8004F !important;
+    color: white !important;
+}
+
+#btn-equal:hover {
+    background-color: #8b0000 !important;
+    color: white !important;
+}
